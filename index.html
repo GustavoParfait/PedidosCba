@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Delivery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <Header class="header container">
+        <div class="headerLogo">
+            <img src="build/img/logo.svg" alt="Logo PedidosCba">
+        </div>
+
+        <nav class="navegation">
+            <a href="#" class="navegationLink">Iniciar Sesion</a>
+            <a href="#" class="navegationLink">Crear Cuenta</a>
+            <a href="#" class="navegationLink navegationLink--Registrar">Registrar Restaurante</a>
+        </nav>
+    </Header>
+
+    <section class="form container">
+        <div class="formGrid">
+            <div class="formContent">
+                <h2>Encuentra y Pide comida de tu restaurante Favorito</h2>
+                <!--formulario-->
+                <form class="formSearch">
+                    <div class="formField">
+                        <label for="restaurante" class="formlabel">Restaurante</label>
+                        <input id="restaurante" class="formInput" placeholder="El Establo">
+                    </div>
+
+                    <div class="formField">
+                        <label for="platillo" class="formlabel">Platillo</label>
+                        <input id="platillo" class="formInput" placeholder="Empanadas, Pizza, Lomito, Hamburguesa">
+                    </div>
+
+                    <input type="submit" class="formSubmit" value="Buscar">
+                </form>
+
+            </div>
+
+            <div class="formImage-Container">
+                <img class="formImage" src="build/img/dibujo_repartidor.svg" alt="Imagen Repartidor">
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
