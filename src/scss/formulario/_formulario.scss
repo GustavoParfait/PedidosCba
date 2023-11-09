@@ -9,6 +9,44 @@
         }
     }
 
+    &Content {
+        background-color: v.$primary;
+        padding: v.$separation;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    &Heading {
+        color: v.$white;
+        text-align: center;
+        
+    }
+
+    &Field {
+        margin-bottom: 1rem;
+    }
+
+    &Label {
+        display: block;
+        text-transform: uppercase;
+        color: v.$white;
+        margin: 1rem 0;
+    }
+
+    &Input {
+        width: 100%;
+        padding: 1.5rem;
+        border: none;
+    }
+
+    &Submit {
+        margin-top: 2rem;
+        @include m.button (v.$secondary, v.$white); @include m.tablet {
+            width: 100%;
+        }
+    }
+
     &Image-Container {
         margin-top: v.$separation;
         display: flex;

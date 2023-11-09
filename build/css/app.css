@@ -367,7 +367,7 @@ p {
 }
 
 .container {
-  width: 95%;
+  width: 80%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -472,6 +472,60 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.formContent {
+  background-color: #e8505b;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.formHeading {
+  color: #FFFFFF;
+  text-align: center;
+}
+.formField {
+  margin-bottom: 1rem;
+}
+.formLabel {
+  display: block;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 1rem 0;
+}
+.formInput {
+  width: 100%;
+  padding: 1.5rem;
+  border: none;
+}
+.formSubmit {
+  margin-top: 2rem;
+  background-color: #455a64;
+  font-size: 2rem;
+  padding: 1.2rem 3rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+.formSubmit:hover {
+  cursor: pointer;
+  background-color: #303f46;
+}
+@media (min-width: 768px) {
+  .formSubmit {
+    width: auto;
+  }
+}
+@media (min-width: 768px) {
+  .formSubmit {
+    width: 100%;
+  }
+}
 .formImage-Container {
   margin-top: 5rem;
   display: flex;
@@ -484,5 +538,40 @@ h3 {
   .formImage {
     width: 100%;
   }
+}
+
+.steps {
+  margin-top: 5rem;
+}
+.stepsWave {
+  margin-bottom: -1rem;
+}
+.stepsContent {
+  background-color: #e8505b;
+}
+.stepsHeading {
+  text-align: center;
+  color: #FFFFFF;
+}
+.stepsHeading--Description {
+  font-size: 1.8rem;
+  display: block;
+}
+@media (min-width: 768px) {
+  .stepsGrid {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.stepsImage {
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 300ms;
+}
+.stepsImage:hover {
+  -webkit-transform: rotate(-4deg) scale(1.2);
+          transform: rotate(-4deg) scale(1.2);
 }
 /*# sourceMappingURL=app.css.map */
