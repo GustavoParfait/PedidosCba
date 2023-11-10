@@ -1,0 +1,16 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.testimonials {
+    padding: v.$separation 0;
+
+    &Heading{
+        text-align: center;
+    }
+
+    &Grid {
+        @include m.tablet { 
+            @include m.grid (5, 2rem);
+         }
+    }
+}
