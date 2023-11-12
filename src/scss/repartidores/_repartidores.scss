@@ -1,0 +1,37 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.dealers {
+    padding: v.$separation 0;
+
+    &Heading {
+        text-align: center;
+        color: v.$secondary;
+    }
+
+    &Grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include m.tablet { 
+            @include m.grid(2, v.$separation); 
+         }
+    }
+
+    &Content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    &Text {
+        line-height: 1.5;
+        color: v.$secondary;
+    }
+
+    &MoreInfo {
+        @include m.button(v.$primary, v.$white);
+    }
+
+}

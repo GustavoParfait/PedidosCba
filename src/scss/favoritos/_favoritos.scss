@@ -1,0 +1,19 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.favorites {
+    background-color: v.$lightGrey;
+    padding: v.$separation 0;
+
+    &Heading {
+        text-align: center;
+        color: v.$secondary;
+    }
+
+    &Grid {
+        @include m.tablet { 
+            @include m.grid(2, 4rem);
+         }
+    }
+}
