@@ -1,2 +1,32 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
+
+.stores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &Heading {
+        text-align: center;
+        color: v.$secondary;
+        margin: 2rem 0 0 0;
+    }
+
+    &Text {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    &Grid {
+        @include m.grid(2, 5rem);
+    }
+
+    &Link {
+        transition-property: transform;
+        transition-duration: 500ms;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+} 
